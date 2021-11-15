@@ -1,0 +1,237 @@
+.dashboard {
+  width: 100%;
+  padding-top: 125px;
+  height: auto;
+}
+
+@media only screen and (max-width: 950px) {
+  .dashboard {
+    padding-top: 200px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .dashboard {
+    padding-top: 150px;
+  }
+}
+
+.dashboard .search-stock {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (max-width: 800px) {
+  .dashboard .search-stock {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .dashboard .search-stock {
+    width: 95%;
+  }
+}
+
+.dashboard .search-stock .input-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.dashboard .search-stock .input-container input {
+  width: calc(100% - 50px);
+  height: 50px;
+  border: 2px solid #1d192e;
+  outline: 0;
+  font-size: 15px;
+  padding: 8px 14px;
+}
+
+.dashboard .search-stock .input-container i {
+  width: 50px;
+  height: 50px;
+  background-color: #1d192e;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+}
+
+.dashboard .search-stock .input-container .stocks-list {
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 80%;
+  height: 100%;
+}
+
+.dashboard .search-stock .input-container .stocks-list p {
+  background-color: #ededed;
+  min-height: 45px;
+  height: auto;
+  text-align: center;
+  border: 2px solid #1d192e;
+  border-top: 0;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+}
+
+.dashboard .search-stock .input-container .stocks-list p:hover {
+  background-color: #1d192e;
+  color: white;
+}
+
+.dashboard .search-stock .error {
+  width: 100%;
+  margin-top: 15px;
+  padding: 15px;
+  color: #D8000C;
+  background-color: #FFD2D2;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 18px;
+  border: 1px solid #D8000C;
+}
+
+.dashboard .search-stock .error .info {
+  margin-top: 8px;
+  padding: 15px;
+  color: #00529B;
+  background-color: #BDE5F8;
+  border: 1px solid #00529B;
+  font-size: 15px;
+}
+
+.dashboard .list-buyed-stocks {
+  width: 90%;
+  margin: 40px auto 20px;
+  overflow-x: auto;
+  padding: 8px 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .dashboard .list-buyed-stocks {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .dashboard .list-buyed-stocks {
+    width: 95%;
+  }
+}
+
+.dashboard .list-buyed-stocks::-webkit-scrollbar {
+  height: 10px;
+}
+
+.dashboard .list-buyed-stocks::-webkit-scrollbar-track {
+  background: white;
+  border: 1px solid #1d192e;
+}
+
+.dashboard .list-buyed-stocks::-webkit-scrollbar-thumb {
+  background: #1d192e;
+}
+
+.dashboard .list-buyed-stocks table {
+  width: 100%;
+  min-width: 700px;
+}
+
+.dashboard .list-buyed-stocks table thead tr {
+  background-color: #1d192e;
+  color: white;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.dashboard .list-buyed-stocks table thead tr th {
+  padding: 8px;
+  letter-spacing: 2px;
+}
+
+.dashboard .list-buyed-stocks table tr {
+  font-weight: bolder;
+}
+
+.dashboard .list-buyed-stocks table tr td {
+  text-align: center;
+  padding: 5px;
+}
+
+.dashboard .list-buyed-stocks table tr td.total {
+  background-color: #1d192e;
+  color: white;
+}
+
+.dashboard .list-buyed-stocks table tr td button {
+  padding: 3px 15px;
+  border: 1px solid #1d192e;
+  -webkit-transition: .2s;
+  transition: .2s;
+  letter-spacing: 1px;
+}
+
+.dashboard .list-buyed-stocks table tr td button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.dashboard .list-buyed-stocks table tr td button:hover:disabled {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  cursor: no-drop;
+}
+
+.dashboard .list-buyed-stocks table tr td button.sell {
+  background-color: red;
+}
+
+.dashboard .list-buyed-stocks table tr td button.sell:disabled {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.dashboard .list-buyed-stocks table tr td button.buy {
+  background-color: #4472c4;
+}
+
+.dashboard .list-buyed-stocks table tr td button.buy:disabled {
+  background-color: rgba(68, 114, 196, 0.5);
+}
+/*# sourceMappingURL=dashboard.css.map */

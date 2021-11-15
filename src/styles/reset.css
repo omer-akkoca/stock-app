@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #ededed;
+}
+
+#root{
+    width: 100%;
+    min-height: 100vh;
+}
+
+button{
+    outline: 0;
+    text-transform: uppercase;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+ul{
+    list-style-type: none;
+}

@@ -1,0 +1,200 @@
+.dashboard{
+    width: 100%;
+    padding-top: 125px;
+    height: auto;
+
+    @media only screen and (max-width: 950px) {
+        padding-top: 200px;
+    }
+
+    @media only screen and (max-width: 500px) {
+        padding-top: 150px;
+    }
+
+    .search-stock{
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        @media only screen and (max-width: 800px) {
+            width: 90%;
+        }
+
+        @media only screen and (max-width: 600px) {
+            width: 95%;
+        }
+
+        .input-container{
+            width: 100%;
+            display: flex;
+            box-sizing: border-box;
+
+            input{
+                width: calc(100% - 50px);
+                height: 50px;
+                border: 2px solid rgb(29, 25, 46);
+                outline: 0;
+                font-size: 15px;
+                padding: 8px 14px;
+            }
+    
+            i{
+                width: 50px;
+                height: 50px;
+                background-color: rgb(29, 25, 46);
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2rem;
+            }
+    
+            .stocks-list{
+                position: absolute;
+                bottom: -100%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80%;
+                height: 100%;
+
+                p{
+                    background-color: #ededed;
+                    min-height: 45px;
+                    height: auto;
+                    text-align: center;
+                    border: 2px solid rgb(29, 25, 46);
+                    border-top: 0;
+                    cursor: pointer;
+                    font-weight: bolder;
+                    font-size: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 5px;
+
+                    &:hover{
+                        background-color: rgb(29, 25, 46);
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .error{
+            width: 100%;
+            margin-top: 15px;
+            padding: 15px;
+            color: #D8000C;
+            background-color: #FFD2D2;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 18px;
+            border: 1px solid #D8000C;
+
+            .info{
+                margin-top: 8px;
+                padding: 15px;
+                color: #00529B;
+                background-color: #BDE5F8;
+                border: 1px solid #00529B;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .list-buyed-stocks{
+        width: 90%;
+        margin: 40px auto 20px;
+        overflow-x: auto;
+        padding: 8px 0;
+
+        @media only screen and (max-width: 800px) {
+            width: 90%;
+        }
+
+        @media only screen and (max-width: 600px) {
+            width: 95%;
+        }
+
+        &::-webkit-scrollbar {
+            height: 10px;
+        }
+      
+        &::-webkit-scrollbar-track {
+            background: white;
+            border: 1px solid rgb(29, 25, 46);
+        }
+       
+        &::-webkit-scrollbar-thumb {
+            background: rgb(29, 25, 46);
+        }
+
+        table{
+            width: 100%;
+            min-width: 700px;
+
+            thead{
+                tr{
+                    background-color: rgb(29, 25, 46);
+                    color: white;
+                    font-size: 14px;
+                    font-weight: bolder;
+
+                    th{
+                        padding: 8px;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+
+            tr{
+                font-weight: bolder;
+                td{
+                    text-align: center;
+                    padding: 5px;
+                
+                    &.total{
+                        background-color: rgb(29, 25, 46);
+                        color: white;
+                    }
+
+                    button{
+                        padding: 3px 15px;
+                        border: 1px solid rgb(29, 25, 46);
+                        transition: .2s;
+                        letter-spacing: 1px;
+
+                        &:hover{
+                            transform: scale(1.2);
+
+                            &:disabled{
+                                transform: scale(1);
+                                cursor: no-drop;
+                            }
+                        }
+
+                        &.sell{
+                            background-color: rgba(255, 0, 0, 1);
+
+                            &:disabled{
+                                background-color: rgba(255, 0, 0, 0.5);
+                            }
+                        }
+
+                        &.buy{
+                            background-color: rgba(68, 114, 196, 1);
+
+                            &:disabled{
+                                background-color: rgba(68, 114, 196, 0.5);
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

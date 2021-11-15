@@ -1,0 +1,143 @@
+.buy-sell-stock-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 9999999;
+  background-color: rgba(29, 25, 46, 0.75);
+}
+
+.buy-sell-stock-modal .content {
+  position: relative;
+  background-color: white;
+  padding: 50px;
+  width: 75%;
+  text-align: center;
+  border: 2px solid #1d192e;
+}
+
+@media only screen and (max-width: 600px) {
+  .buy-sell-stock-modal .content {
+    width: 90%;
+  }
+}
+
+.buy-sell-stock-modal .content > * {
+  margin-bottom: 15px;
+}
+
+.buy-sell-stock-modal .content .amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+}
+
+.buy-sell-stock-modal .content .amount i {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.buy-sell-stock-modal .content button {
+  margin-bottom: 0;
+  padding: 8px 75px;
+  background-color: #1d192e;
+  color: white;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  letter-spacing: 2px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.buy-sell-stock-modal .content button:hover {
+  -webkit-box-shadow: 0 5px 5px rgba(29, 25, 46, 0.5);
+          box-shadow: 0 5px 5px rgba(29, 25, 46, 0.5);
+}
+
+.buy-sell-stock-modal .content button:disabled {
+  cursor: no-drop;
+}
+
+.buy-sell-stock-modal .content i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.buy-sell-stock-modal .content i.add-delete-favorite:hover {
+  background-color: inherit;
+  color: inherit;
+}
+
+.buy-sell-stock-modal .content i:hover {
+  background-color: #1d192e;
+  color: white;
+}
+
+.buy-sell-stock-modal .content .close-modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #1d192e;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+}
+
+.buy-sell-stock-modal .content .add-delete-favorite {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black;
+}
+
+@media only screen and (max-width: 600px) {
+  .buy-sell-stock-modal .content .title {
+    font-size: 20px;
+  }
+}
+
+.buy-sell-stock-modal .content .error {
+  padding: 8px;
+  text-align: center;
+  font-size: 15px;
+  color: #D8000C;
+  background-color: #FFD2D2;
+}
+
+.buy-sell-stock-modal .content .error.data-error {
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=modals.css.map */

@@ -1,0 +1,119 @@
+.buy-sell-stock-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999999;
+    background-color: rgba(29, 25, 46, 0.75);
+
+    .content{
+        position: relative;
+        background-color: white;
+        padding: 50px;
+        width: 75%;
+        text-align: center;
+        border: 2px solid rgb(29, 25, 46);
+
+        @media only screen and (max-width: 600px) {
+            width: 90%;
+        }
+
+        & > *{
+            margin-bottom: 15px;
+        }
+
+        .amount{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+
+            i{
+                width: 30px;
+                height: 30px;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        }
+
+        button{
+            margin-bottom: 0;
+            padding: 8px 75px;
+            background-color: rgb(29, 25, 46);
+            color: white;
+            border: 0;
+            outline: 0;
+            font-size: 16px;
+            letter-spacing: 2px;
+            transition: .2s;
+
+            &:hover{
+                box-shadow: 0 5px 5px rgba(29, 25, 46, 0.5);
+            }
+
+            &:disabled{
+                cursor: no-drop;
+            }
+        }
+
+        i{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: .2s;
+            
+            &.add-delete-favorite:hover{
+                background-color: inherit;
+                color: inherit;
+            }
+
+            &:hover{
+                background-color: rgb(29, 25, 46);
+                color: white;
+            }
+        }
+
+        .close-modal{
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: rgb(29, 25, 46);
+            width: 50px;
+            height: 50px;
+            font-size: 2rem;
+        }
+
+        .add-delete-favorite{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50px;
+            height: 50px;
+            font-size: 2rem;
+            text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black;
+        }
+
+        .title{
+            @media only screen and (max-width: 600px) {
+                font-size: 20px;
+            }
+        }
+
+        .error{
+            padding: 8px;
+            text-align: center;
+            font-size: 15px;
+            color: #D8000C;
+            background-color: #FFD2D2;
+
+            &.data-error{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
