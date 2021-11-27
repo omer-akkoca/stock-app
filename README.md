@@ -28,6 +28,7 @@ You can only buy stocks with an integer price and if you have money to buy that 
 ![stock-in-the-table](https://user-images.githubusercontent.com/79708845/143676612-e3819c97-adf6-4c6d-8ec6-c23709823481.png)
 
 Here you can see your stocks informatiton and their price. And if you checked one of them buy and sell stock button will be active.
+And stocks prices are updated every two minutes and the last update time is written in the table. Also you can see your total stock amount and price.
 You already know how to works buy stock modal. Lets look sell stock modal.
 
 ![sell-stock](https://user-images.githubusercontent.com/79708845/143676729-98019e4e-3392-400a-a75e-e3ba97e84e55.png)
@@ -43,6 +44,14 @@ If you click it when it is yellow, it will remove from your favorite stocks.
 ![favorite-stock-list](https://user-images.githubusercontent.com/79708845/143676936-a198f13f-86a5-477d-ae10-aaad941dc4c4.png)
 
 And you can look your favorites stocks in favorite stocks page.
+
+This is dashboard medium view
+
+![md-view](https://user-images.githubusercontent.com/79708845/143677229-4756cf1b-e567-484e-9e42-7eb303efcdd8.png)
+
+This is dashboard small view
+
+![sm-view](https://user-images.githubusercontent.com/79708845/143677245-9004b44c-6308-41ac-83a1-5c3eba9de35c.png)
 
 I hope you like my project. Have a good learn and enjoy.
 --------------------------------------------------------
