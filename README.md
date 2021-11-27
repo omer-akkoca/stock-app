@@ -2,11 +2,11 @@
 
 ![home](https://user-images.githubusercontent.com/79708845/143675179-c3813543-a61e-411c-8458-613764f34c1b.png)
 
-It is home page. If you want to use this stock app.
+It is home page.
 
 ![register](https://user-images.githubusercontent.com/79708845/143675205-d713183e-d963-4e6c-ae22-e5b3ce95b28e.png)
 
-You have to signup
+You have to sign up.
 
 ![login](https://user-images.githubusercontent.com/79708845/143675215-2d9a0c43-d9d6-4f52-8c27-9f95f448d8a6.png)
 
@@ -53,5 +53,5 @@ This is dashboard small view
 
 ![sm-view](https://user-images.githubusercontent.com/79708845/143677245-9004b44c-6308-41ac-83a1-5c3eba9de35c.png)
 
-I hope you like my project. Have a good learn and enjoy.
+I hope you like my project.
 --------------------------------------------------------
