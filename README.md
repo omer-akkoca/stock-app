@@ -35,6 +35,8 @@ You already know how to works buy stock modal. Lets look sell stock modal.
 
 You can sell the stocks in this modal.
 
+Your total balance and total worth will be updated automatically after buying and selling transactions.
+
 There is a star in buy and sell stock modal.
 ![no-favorite-stock](https://user-images.githubusercontent.com/79708845/143676847-3afe08a4-82c4-4bdf-951e-d1f3ace4e427.png)
 If you click it when it is white, it will add in your favorite stocks.
